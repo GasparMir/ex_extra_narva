@@ -174,6 +174,9 @@ function takePhoto() {
     photoContainer.appendChild(geoInfo);
 
     gallery.prepend(photoContainer); 
+    cameraContainer.style.display = 'none';
+    openCameraBtn.textContent = 'Abrir Cámara';
+    openCameraBtn.disabled = false;
 }
 
 function closeCamera() {
