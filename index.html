@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <title>Extra</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" href="/icon-192.png" sizes="180x180">
+</head>
+<body>
+    <h1>Extraordinario PWA - JGML</h1>
+
+    <div id="location-info">
+        <h3>Estado de Ubicación</h3>
+        <p>Última Posición: <span id="last-position">Esperando...</span></p>
+    </div>
+    
+    <hr>
+    
+    <button id="openCamera">Abrir Cámara</button>
+
+    <div id="cameraContainer" style="display:none;">
+        <video id="video" autoplay playsinline width="320" height="240"></video><br>
+        <button id="switchCamera">Cambiar Cámara</button>
+        <button id="takePhoto">Tomar Foto</button>
+        <canvas id="canvas" width="320" height="240" style="display:none;"></canvas>
+    </div>
+
+    <h6>Galería de Fotos </h6>
+    <div id="gallery">
+        </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
